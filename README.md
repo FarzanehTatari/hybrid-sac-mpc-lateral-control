@@ -27,7 +27,7 @@ A hybrid controller that **matches the tracking quality of stand-alone SAC** whi
 
 Nominal initial-condition recovery task, x₀ = (0.2, 0.05, 0, 0), T = 20 s. SAC and Hybrid: mean ± std over five SAC training seeds. PID and MPC are deterministic.
 
-![Lateral error, heading error, and steering trajectories for the four controllers](results/figures/fig_nominal.png)
+![Lateral error, heading error, and steering trajectories for the four controllers](results/figures/final_controller_comparison.png)
 
 ---
 
