@@ -1,0 +1,7 @@
+comparison:
+  seeds: [42]
+  scenarios: ["nominal", "noise", "param_mismatch"]
+
+robustness:
+  lambda_sac_values: [1.0, 3.0, 5.0, 10.0]
+  noise_levels: [0.0, 0.02, 0.05]

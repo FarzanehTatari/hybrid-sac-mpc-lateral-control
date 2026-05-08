@@ -1,0 +1,6 @@
+horizon: 15
+q_y: 5.0
+q_psi: 3.0
+r_delta: 0.1
+r_delta_rate: 0.05
+lambda_sac: 5.0

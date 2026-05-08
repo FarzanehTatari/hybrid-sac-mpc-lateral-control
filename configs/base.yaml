@@ -1,0 +1,22 @@
+seed: 42
+dt: 0.05
+sim_steps: 400
+
+vehicle:
+  m: 1600.0
+  Iz: 2500.0
+  lf: 1.2
+  lr: 1.6
+  Cf: 80000.0
+  Cr: 80000.0
+  vx_nominal: 15.0
+
+constraints:
+  delta_max_deg: 25.0
+  delta_rate_max_deg_s: 180.0
+  ey_max: 1.5
+
+reference:
+  type: "lane_change"
+  amplitude: 1.0
+  length: 60.0
