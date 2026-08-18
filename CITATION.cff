@@ -1,0 +1,54 @@
+# CITATION.cff — GitHub Citation File Format
+# https://citation-file-format.github.io/
+#
+# When this file is at the repo root, GitHub renders a "Cite this repository"
+# button in the sidebar and formats the citation in APA / BibTeX for visitors.
+#
+# On arXiv-live day, replace the three "XXXX.XXXXX" placeholders with your
+# real arXiv ID (from the confirmation email) and un-comment the doi line.
+
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper (below)."
+title: "Hybrid SAC + MPC for Vehicle Lateral Control"
+abstract: >-
+  A closed-form blend of a Soft Actor-Critic policy and a constrained linear
+  MPC for the canonical connected-and-automated-vehicle lateral-control problem
+  on a linearized lateral bicycle model. Combines the tracking quality of deep
+  RL with the actuator-envelope and interpretability of MPC, exposed through
+  a single monotone blending coefficient.
+type: software
+version: "0.1.0"
+date-released: "2026-08-17"
+license: MIT
+repository-code: "https://github.com/FarzanehTatari/hybrid-sac-mpc-lateral-control"
+url: "https://github.com/FarzanehTatari/hybrid-sac-mpc-lateral-control"
+keywords:
+  - reinforcement learning
+  - soft actor-critic
+  - model predictive control
+  - autonomous vehicles
+  - safe reinforcement learning
+  - hybrid control
+  - lateral control
+authors:
+  - family-names: Tatari
+    given-names: Farzaneh
+    orcid: "https://orcid.org/0000-0001-5176-3372"
+    email: fa_tatari@yahoo.com
+
+# When GitHub shows the "Cite this repository" button, it prefers the paper
+# below (via `preferred-citation`) over the software metadata above — so
+# clicking the button gives visitors the paper citation, not just the code.
+preferred-citation:
+  type: article
+  title: >-
+    A Hybrid End-to-End and Modular Control Architecture Toward Safe Vehicle
+    Lateral Control: Combining Soft Actor-Critic with Model Predictive Control
+  authors:
+    - family-names: Tatari
+      given-names: Farzaneh
+      orcid: "https://orcid.org/0000-0001-5176-3372"
+  year: 2026
+  journal: "arXiv preprint arXiv:XXXX.XXXXX"      # <-- paste arXiv ID here
+  url: "https://arxiv.org/abs/XXXX.XXXXX"         # <-- paste arXiv URL here
+  # doi: "10.48550/arXiv.XXXX.XXXXX"              # <-- uncomment + paste after arXiv assigns DOI
