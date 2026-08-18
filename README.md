@@ -5,12 +5,15 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<!-- [![SAE Paper](https://img.shields.io/badge/SAE-Technical_Paper-darkgreen.svg)]([ON ACCEPTANCE: SAE paper URL]) -->
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.XXXX/zenodo.XXXXXXX.svg)]([ON ACCEPTANCE: Zenodo DOI]) -->
+<!-- When arXiv moderation clears, uncomment and paste your arXiv ID (format: 2601.12345) -->
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) -->
+<!-- [![DOI](https://zenodo.org/badge/DOI/10.XXXX/zenodo.XXXXXXX.svg)](https://doi.org/10.XXXX/zenodo.XXXXXXX) -->
 
-📄 **Paper:** [ON ACCEPTANCE: link to SAE technical paper]
-👥 **Authors:** [ON ACCEPTANCE: author list]
-📊 **Venue:** [ON ACCEPTANCE: SAE conference / journal name and year]
+📄 **Paper:** *arXiv URL pending moderation — replace with* `https://arxiv.org/abs/XXXX.XXXXX`
+👤 **Author:** Farzaneh Tatari · [ORCID 0000-0001-5176-3372](https://orcid.org/0000-0001-5176-3372)
+📊 **Venue:** arXiv preprint, 2026
+
+> *This work was performed independently by the author on personal time and does not reflect the views, positions, or products of any employer.*
 
 ---
 
@@ -26,6 +29,10 @@ A hybrid controller that **matches the tracking quality of stand-alone SAC** whi
 | **Hybrid (λ = 12)** | **0.0171 ± 0.0006** | **0.2375** | **2.90 × 10⁻³** |
 
 Nominal initial-condition recovery task, x₀ = (0.2, 0.05, 0, 0), T = 20 s. SAC and Hybrid: mean ± std over five SAC training seeds. PID and MPC are deterministic.
+
+**What the hybrid does and does not guarantee (from the paper):**
+- **Guaranteed by construction:** per-step actuator magnitude bound `|δ_k| ≤ δ_max` via the final saturation, and a non-zero deterministic model-based contribution to every steering command bounded below by `(1 − α) δ_max`.
+- **Not guaranteed:** the input-rate constraint over the blended horizon; recursive feasibility; terminal invariance; prevention of corner-case divergences when the SAC action saturates in the wrong direction (see paper Section 8.4, and the "Limitations" section below).
 
 ![Lateral error, heading error, and steering trajectories for the four controllers](results/figures/final_controller_comparison.png)
 
@@ -87,8 +94,8 @@ Nominal initial-condition recovery task, x₀ = (0.2, 0.05, 0, 0), T = 20 s. SAC
 ## Quick reproduction
 
 ```bash
-# 1. clone (private repo during review)
-git clone <repo-url>.git
+# 1. clone
+git clone https://github.com/FarzanehTatari/hybrid-sac-mpc-lateral-control.git
 cd hybrid-sac-mpc-lateral-control
 
 # 2. set up the environment
@@ -185,19 +192,24 @@ python -m pytest tests/
 
 ## Citation
 
-[ON ACCEPTANCE: insert final BibTeX]
+If you use this code or the ideas from the paper, please cite:
 
 ```bibtex
-@inproceedings{[ON ACCEPTANCE: bibkey],
-  title     = {[ON ACCEPTANCE: final paper title]},
-  author    = {[ON ACCEPTANCE: author list]},
-  booktitle = {[ON ACCEPTANCE: SAE venue]},
-  year      = {[ON ACCEPTANCE: year]},
-  doi       = {[ON ACCEPTANCE: DOI]}
+@misc{tatari2026hybrid,
+  title         = {A Hybrid End-to-End and Modular Control Architecture Toward Safe Vehicle Lateral Control:
+                    Combining Soft Actor-Critic with Model Predictive Control},
+  author        = {Tatari, Farzaneh},
+  year          = {2026},
+  eprint        = {XXXX.XXXXX},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  orcid         = {0000-0001-5176-3372}
 }
 ```
 
-If you specifically want to cite this code archive, use the Zenodo DOI in the badge above (added on the first tagged release).
+*Once arXiv moderation clears, replace `XXXX.XXXXX` with your real arXiv ID (from the confirmation email). arXiv also provides a copy-paste-ready BibTeX on your paper's abstract page — use that if you prefer.*
+
+If you want to cite this code archive specifically (as opposed to the paper), archive a tagged release on Zenodo and use that DOI.
 
 ---
 
@@ -220,6 +232,8 @@ The paper is explicit about the limitations of the implementation evaluated here
 - [ ] Combined longitudinal + lateral control
 - [ ] CarSim or CARLA co-simulation validation
 
+**Companion paper in preparation** (from the arXiv version's conclusion) implements the full constrained-QP predictive safety filter of Eq. (19) with a terminal invariant set for formal recursive feasibility, empirically validates the V2X-scheduled λ extension, and evaluates the architecture on a nonlinear single-track vehicle model.
+
 ---
 
 ## License
@@ -230,6 +244,9 @@ MIT — see [LICENSE](LICENSE).
 
 ## Contact
 
-[ON ACCEPTANCE: contact email and links]
+- ✉️ fa_tatari@yahoo.com
+- 💻 [GitHub](https://github.com/FarzanehTatari)
+- 💼 [LinkedIn](https://www.linkedin.com/in/farzaneh-tatari-75296a115/)
+- 🎓 [Google Scholar](https://scholar.google.com/citations?user=kocqXnAAAAAJ)
 
 For questions about the code or to report a bug, open an issue.
