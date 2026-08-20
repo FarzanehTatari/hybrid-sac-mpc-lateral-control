@@ -5,11 +5,9 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<!-- When arXiv moderation clears, uncomment and paste your arXiv ID (format: 2601.12345) -->
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) -->
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.XXXX/zenodo.XXXXXXX.svg)](https://doi.org/10.XXXX/zenodo.XXXXXXX) -->
+[![arXiv](https://img.shields.io/badge/arXiv-2608.17258-b31b1b.svg)](https://arxiv.org/abs/2608.17258)
 
-📄 **Paper:** *arXiv URL pending moderation — replace with* `https://arxiv.org/abs/XXXX.XXXXX`
+📄 **Paper:** [arXiv:2608.17258](https://arxiv.org/abs/2608.17258)
 👤 **Author:** Farzaneh Tatari · [ORCID 0000-0001-5176-3372](https://orcid.org/0000-0001-5176-3372)
 📊 **Venue:** arXiv preprint, 2026
 
@@ -200,14 +198,13 @@ If you use this code or the ideas from the paper, please cite:
                     Combining Soft Actor-Critic with Model Predictive Control},
   author        = {Tatari, Farzaneh},
   year          = {2026},
-  eprint        = {XXXX.XXXXX},
+  eprint        = {2608.17258},
   archivePrefix = {arXiv},
   primaryClass  = {cs.RO},
-  orcid         = {0000-0001-5176-3372}
+  doi           = {10.48550/arXiv.2608.17258},
+  url           = {https://arxiv.org/abs/2608.17258}
 }
 ```
-
-*Once arXiv moderation clears, replace `XXXX.XXXXX` with your real arXiv ID (from the confirmation email). arXiv also provides a copy-paste-ready BibTeX on your paper's abstract page — use that if you prefer.*
 
 If you want to cite this code archive specifically (as opposed to the paper), archive a tagged release on Zenodo and use that DOI.
 
