@@ -6,6 +6,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-2608.17258-b31b1b.svg)](https://arxiv.org/abs/2608.17258)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23407347-blue.svg)](https://doi.org/10.5281/zenodo.23407347)
 
 📄 **Paper:** [arXiv:2608.17258](https://arxiv.org/abs/2608.17258)
 👤 **Author:** Farzaneh Tatari · [ORCID 0000-0001-5176-3372](https://orcid.org/0000-0001-5176-3372)
